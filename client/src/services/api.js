@@ -1,6 +1,7 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:3001';
+const API_URL = 'https://student-log-register.onrender.com';
+// const API_URL = 'http://localhost:3001';
 
 // Create axios instance with default config
 const api = axios.create({

@@ -9,10 +9,14 @@ const Student = require("./models/Student");
 const app = express(); 
 
 // Middleware
-app.use(cors({
-  origin: '*',
-  credentials: true
-}));
+const allowedOrigin = "https://student-log-register.vercel.app";
+
+app.use(
+  cors({
+    origin: allowedOrigin,
+    credentials: true, // allow cookies/auth headers
+  })
+);
 app.use(express.json());
 
 // Debug middleware - log all requests

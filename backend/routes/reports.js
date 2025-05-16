@@ -186,7 +186,7 @@ router.get('/marks', adminAuth, async (req, res) => {
       stats.min = Math.min(stats.min, record.marks);
       
       // Assuming passing marks is 35%
-      if (record.marks >= 35) {
+      if (record.marks >= 45) {
         stats.passCount++;
       } else {
         stats.failCount++;
